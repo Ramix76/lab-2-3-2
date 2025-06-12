@@ -22,3 +22,49 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+.object-contain {
+  object-fit: cover;
+}
+
+.content-wrapper{
+  padding: 100px;
+
+}
+
+.p1 {
+  text-align: justify;
+  text-align-last: justify;
+  line-height: 1.6;
+}
+
+h1{
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.unord-list{
+  list-style-type: "-";
+  padding: 40px;
+  font-size: 1.5rem;
+}
+
+.ord-list {
+  list-style: none;
+  counter-reset: item;
+  font-size: 1.5rem;
+}
+
+.ord-list li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ord-list li::before {
+  content: counter(item) ") ";
+  position: absolute;
+  left: 0;
+}
